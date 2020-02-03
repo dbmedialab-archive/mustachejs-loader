@@ -3,6 +3,17 @@
   "version": "0.1.0",
   "author": "Aller Media",
   "license": "MIT",
+  "description": "Mustache.js loader for webpack",
+  "keywords": [
+    "webpack",
+    "loader",
+    "mustache"
+  ],
+  "homepage": "https://github.com/dbmedialab/mustachejs-loader",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/dbmedialab/mustachejs-loader.git"
+  },
   "scripts": {
     "clean": "del-cli dist",
     "prebuild": "yarn clean",

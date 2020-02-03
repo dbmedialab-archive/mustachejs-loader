@@ -18,6 +18,7 @@ describe('Mustachjs loader function', () => {
   it('replaces variables', async () => {
     const mjsl = mustachejsLoader.apply({ query: {} }, ['{{ variable }}'])
     eval(mjsl)
+    console.log(module.exports.templateString)
     expect(module.exports({ variable: 'Hello!' })).toBe('Hello!')
   })
 
