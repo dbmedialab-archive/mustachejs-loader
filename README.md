@@ -9,7 +9,7 @@ module: {
   rules: [
     {
       test: /\.mustache$/,
-      loader: 'mustache'
+      loader: '@aller/mustachejs-loader'
     }
   ]
 }
