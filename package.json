@@ -1,0 +1,50 @@
+{
+  "name": "mustachejs-loader",
+  "version": "1.0.0",
+  "author": "Dan Audne (dan@whg.no)",
+  "license": "MIT",
+  "scripts": {
+    "clean": "del-cli dist",
+    "prebuild": "yarn clean",
+    "build": "NODE_ENV=production babel src -d dist --copy-files",
+    "test": "jest"
+  },
+  "peerDependencies": {
+    "mustache": "^4.0.0",
+    "webpack": "^4.41.5"
+  },
+  "dependencies": {
+    "mustache": "^4.0.0"
+  },
+  "env": {
+    "node": true,
+    "es6": true,
+    "jest": true
+  },
+  "devDependencies": {
+    "@babel/cli": "7.8.4",
+    "@babel/core": "7.8.4",
+    "@babel/preset-env": "7.8.4",
+    "babel-eslint": "^10.0.3",
+    "babel-jest": "^25.1.0",
+    "del-cli": "^3.0.0",
+    "eslint": "6.8.0",
+    "eslint-config-prettier": "6.10.0",
+    "eslint-plugin-import": "^2.20.0",
+    "eslint-plugin-json": "^2.0.1",
+    "eslint-plugin-prettier": "3.1.2",
+    "jest": "^25.1.0",
+    "memory-fs": "^0.5.0",
+    "path": "^0.12.7",
+    "prettier": "^1.19.1",
+    "webpack": "^4.41.5"
+  },
+  "prettier": {
+    "semi": false,
+    "useTabs": false,
+    "tabWidth": 2,
+    "printWidth": 100,
+    "trailingComma": "es5",
+    "singleQuote": true
+  }
+}
