@@ -1,14 +1,16 @@
 {
-  "name": "mustachejs-loader",
-  "version": "1.0.0",
-  "author": "Dan Audne (dan@whg.no)",
+  "name": "@aller/mustachejs-loader",
+  "version": "0.1.0",
+  "author": "Aller Media",
   "license": "MIT",
   "scripts": {
     "clean": "del-cli dist",
     "prebuild": "yarn clean",
     "build": "NODE_ENV=production babel src -d dist --copy-files",
-    "test": "jest"
+    "test": "jest",
+    "release": "yarn build && np --access=public"
   },
+  "main": "dist/index.js",
   "peerDependencies": {
     "mustache": "^4.0.0",
     "webpack": "^4.41.5"
@@ -35,10 +37,12 @@
     "eslint-plugin-prettier": "3.1.2",
     "jest": "^25.1.0",
     "memory-fs": "^0.5.0",
+    "np": "^5.2.1",
     "path": "^0.12.7",
     "prettier": "^1.19.1",
     "webpack": "^4.41.5"
   },
+  "private": false,
   "prettier": {
     "semi": false,
     "useTabs": false,
