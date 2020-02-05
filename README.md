@@ -95,6 +95,6 @@ module: {
 }
 ```
 
-The [@aller/mustachejs-partial-loader](https://www.npmjs.com/package/@aller/mustachejs-loader) by default fetches all the files with the suffix `.mustache` from the `./partials` directory.
+The [@aller/mustachejs-partial-loader](https://www.npmjs.com/package/@aller/mustachejs-partial-loader) by default fetches all the files with the suffix `.mustache` from the `./partials` directory.
 
-To see available options for the partial loader [click here](https://www.npmjs.com/package/@aller/mustachejs-loader)
+To see available options for the partial loader [click here](https://www.npmjs.com/package/@aller/mustachejs-partial-loader#options)
