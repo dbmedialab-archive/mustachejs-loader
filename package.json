@@ -1,6 +1,6 @@
 {
   "name": "@aller/mustachejs-loader",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "author": "Aller Media",
   "license": "MIT",
   "description": "Mustache.js loader for webpack",
